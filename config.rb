@@ -18,4 +18,8 @@ helpers do
   def local_term_names(term)
     I18n.translate term, scope: %i[terms names], default: []
   end
+
+  def term_summary(term)
+    I18n.translate term, scope: %i[terms summaries], default: nil
+  end
 end

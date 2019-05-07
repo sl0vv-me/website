@@ -10,7 +10,7 @@
 <div class="container">
   <% data.terms.each_with_index do |term, term_index| %>
     <% names = global_term_names term %>
-    <% summ  = I18n.translate term, scope: %i[terms summaries], default: nil %>
+    <% summ  = term_summary term %>
 
     <% unless term_index.zero? %>
       <hr/>
