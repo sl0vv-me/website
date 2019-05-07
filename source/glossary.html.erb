@@ -9,9 +9,11 @@
       <hr/>
     <% end %>
 
-    <%= term_link term %>
-
     <p id="<%= term %>">
+      <%= term_link term %>
+
+      </br>
+
       <% names.each do |name, name_index| %>
         <strong><%= name %></strong><%= ',' unless name_index.zero? %>
       <% end %>
