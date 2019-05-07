@@ -17,8 +17,8 @@
     <% end %>
 
     <p>
-      <% names.reverse.each_with_index.reverse_each do |name, name_idx| %>
-        <strong><%= name %></strong><%= ',' unless name_idx.zero? %>
+      <% names.reverse.each_with_index.reverse_each do |name, name_index| %>
+        <strong><%= name %></strong><%= ',' unless name_index.zero? %>
       <% end %>
 
       <% unless summ.nil? %>
