@@ -16,7 +16,9 @@
       <hr/>
     <% end %>
 
-    <p>
+    <a href="#<%= term %>"><small>[link]</small></a>
+
+    <p id="<%= term %>">
       <% names.reverse.each_with_index.reverse_each do |name, name_index| %>
         <strong><%= name %></strong><%= ',' unless name_index.zero? %>
       <% end %>
