@@ -8,7 +8,11 @@
 </div>
 
 <div class="container">
-  <% data.glossary.each do |term| %>
+  <% data.glossary.each_with_index do |term, term_index| %>
+    <% unless term_index.zero? %>
+      <hr/>
+    <% end %>
+
     <p>
       <% term.names.reverse.each_with_index.reverse_each do |name, name_idx| %>
         <strong><%= name %></strong><%= ',' unless name_idx.zero? %>
