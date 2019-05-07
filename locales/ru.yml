@@ -4,3 +4,31 @@ ru:
   summary: >-
     Ресурс о либертарианстве, крипто-анархизме
     и методах коллективного принятия решений.
+  terms:
+    names:
+      voter: ['избиратель']
+      candidate: ['альтернатива', 'кандидат']
+      dictator: ['диктатор']
+      efficiency: ['эффективность']
+      independence-of-non-voters-preferences: ['анонимность', 'равенство избирателей']
+      monotonicity: ['монотонность', 'позитивный отклик']
+      feasibility: ['универсальность', 'достижимость результата']
+      unanimity: ['единогласие', 'Парето-эффективность']
+      independence-of-irrelevant-alternatives: ['независимость от посторонних альтернатив']
+      transitivity: ['транзитивность']
+      strategy-proofness: ['полнота']
+      strong-candidate-stability: ['критерий победителя по Кондорсе']
+      candidate-stability: ['критерий проигравшего по Кондорсе']
+      mays-theorem: ['теорема Мэя']
+      median-voter-theorem: ['теорема о медианном избирателе']
+      arrows-impossibility-theorem: ['теорема Эрроу']
+      unanimity-vote: ['правило единогласного принятия']
+      majority-vote: ['правило абсолютного большинства']
+      plurality-vote: ['правило относительного большинства']
+      borda-method: ['система Борда']
+      condorcet-method: ['система Кондорсе']
+      approval-voting: ['одобряющее голосование']
+      voting-system: ['система голосования', 'конституция']
+      individual-preference: ['индивидуальное предпочтение']
+      collective-preference: ['коллективное предпочтение']
+      preference-profile: ['конфигурация индивидуальных предпочтений']
