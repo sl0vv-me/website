@@ -13,6 +13,10 @@
       <% term.names.reverse.each_with_index.reverse_each do |name, index| %>
         <strong><%= name %></strong><%= ',' unless index.zero? %>
       <% end %>
+      <% unless term.summary.nil? %>
+        &mdash;
+        <%= term.summary %>
+      <% end %>
     </p>
   <% end %>
 </div>
