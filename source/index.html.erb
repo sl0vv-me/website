@@ -9,17 +9,21 @@
 
 <div class="container">
   <% data.terms.each_with_index do |term, term_index| %>
+    <% names = I18n.translate term, scope: %i[terms names] %>
+    <% summ  = I18n.translate term, scope: %i[terms summaries], default: nil %>
+
     <% unless term_index.zero? %>
       <hr/>
     <% end %>
 
     <p>
-      <% term.names.reverse.each_with_index.reverse_each do |name, name_idx| %>
+      <% names.reverse.each_with_index.reverse_each do |name, name_idx| %>
         <strong><%= name %></strong><%= ',' unless name_idx.zero? %>
       <% end %>
-      <% unless term.summary.nil? %>
+
+      <% unless summ.nil? %>
         &mdash;
-        <%= term.summary %>
+        <%= summ %>
       <% end %>
     </p>
   <% end %>

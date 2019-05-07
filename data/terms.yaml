@@ -1,101 +1,26 @@
-- names: ['избиратель']
-  handle: voter
-
-- names: ['альтернатива', 'кандидат']
-  handle: candidate
-
-- names: ['диктатор']
-  handle: dictator
-
-- names: ['эффективность']
-  handle: efficiency
-  summary: >-
-    Свойство системы голосования, устанавливающее, что нет такой альтернативы,
-    которую все избиратели строго больше предпочитали бы победителю.
-
-- names: ['анонимность', 'равенство избирателей']
-  handle: independence-of-non-voters-preferences
-
-- names: ['монотонность', 'позитивный отклик']
-  handle: monotonicity
-
-- names: ['универсальность', 'достижимость результата']
-  handle: feasibility
-  summary: >-
-    Свойство системы голосования, характеризующее возможность отражения любой
-    конфигурации индивидуальных предпочтений избирателей.
-
-- names: ['единогласие', 'Парето-эффективность']
-  handle: unanimity
-  summary: >-
-    Свойство системы голосования, устанавливающее, что для конфигурации
-    индивидуальных предпочтений, при которой каждый индивидуум предпочитает
-    альтернативу A альтернативе B, коллективное предпочтение должно быть
-    таким же.
-
-- names: ['независимость от посторонних альтернатив']
-  handle: independence-of-irrelevant-alternatives
-  summary: >-
-    Свойство системы голосования, устанавливающее, что порядок коллективного
-    предпочтения двух альтернатив должен зависеть только от индивидуальных
-    предпочтений этих двух альтернатив.
-
-- names: ['транзитивность']
-  handle: transitivity
-
-- names: ['полнота']
-  handle: strategy-proofness
-  summary: >-
-    Свойство системы голосования, характеризующее возможность упорядочить
-    каждую пару альтернатив.
-
-- names: ['критерий победителя по Кондорсе']
-  handle: strong-candidate-stability
-  summary: >-
-    Свойство системы голосования, устанавливающее, что победитель по системе
-    Кондорсе побеждает и в данной системе.
-
-- names: ['критерий проигравшего по Кондорсе']
-  handle: candidate-stability
-  summary: >-
-    Свойство системы голосования, устанавливающее, что проигравший по системе
-    Кондорсе не побеждает и в данной системе.
-
-- names: ['теорема Мэя']
-  handle: mays-theorem
-
-- names: ['теорема о медианном избирателе']
-  handle: median-voter-theorem
-
-- names: ['теорема Эрроу']
-  handle: arrows-impossibility-theorem
-
-- names: ['правило единогласного принятия']
-  handle: unanimity-vote
-
-- names: ['правило абсолютного большинства']
-  handle: majority-vote
-
-- names: ['правило относительного большинства']
-  handle: plurality-vote
-
-- names: ['система Борда']
-  handle: borda-method
-
-- names: ['система Кондорсе']
-  handle: condorcet-method
-
-- names: ['одобряющее голосование']
-  handle: approval-voting
-
-- names: ['система голосования', 'конституция']
-  handle: voting-system
-
-- names: ['индивидуальное предпочтение']
-  handle: individual-preference
-
-- names: ['коллективное предпочтение']
-  handle: collective-preference
-
-- names: ['конфигурация индивидуальных предпочтений']
-  handle: preference-profile
+- voter
+- candidate
+- dictator
+- efficiency
+- independence-of-non-voters-preferences
+- monotonicity
+- feasibility
+- unanimity
+- independence-of-irrelevant-alternatives
+- transitivity
+- strategy-proofness
+- strong-candidate-stability
+- candidate-stability
+- mays-theorem
+- median-voter-theorem
+- arrows-impossibility-theorem
+- unanimity-vote
+- majority-vote
+- plurality-vote
+- borda-method
+- condorcet-method
+- approval-voting
+- voting-system
+- individual-preference
+- collective-preference
+- preference-profile
