@@ -12,7 +12,7 @@ end
 
 helpers do
   def global_term_names(term)
-    local_term_names term
+    local_term_names(term).reverse.each_with_index.reverse_each
   end
 
   def local_term_names(term)
