@@ -11,6 +11,14 @@ activate :autoprefixer do |prefix|
 end
 
 helpers do
+  def term_link(term)
+    link_to "glossary.html##{term}" do
+      content_tag :small do
+        "[#{I18n.translate(:link)}]"
+      end
+    end
+  end
+
   def global_term_names(term)
     local_term_names(term).reverse.each_with_index.reverse_each
   end
