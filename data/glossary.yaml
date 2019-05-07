@@ -30,7 +30,7 @@
     таким же.
 
 - names: ['независимость от посторонних альтернатив']
-  handle: independence-of-infeasible-alternatives
+  handle: independence-of-irrelevant-alternatives
   summary: >-
     Свойство системы голосования, устанавливающее, что порядок коллективного
     предпочтения двух альтернатив должен зависеть только от индивидуальных
