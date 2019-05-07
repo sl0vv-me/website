@@ -62,28 +62,40 @@
     Кондорсе не побеждает и в данной системе.
 
 - names: ['теорема Мэя']
+  handle: mays-theorem
 
 - names: ['теорема о медианном избирателе']
+  handle: median-voter-theorem
 
 - names: ['теорема Эрроу']
+  handle: arrows-impossibility-theorem
 
 - names: ['правило единогласного принятия']
+  handle: unanimity-vote
 
 - names: ['правило абсолютного большинства']
+  handle: majority-vote
 
 - names: ['правило относительного большинства']
+  handle: plurality-vote
 
 - names: ['система Борда']
+  handle: borda-method
 
 - names: ['система Кондорсе']
+  handle: condorcet-method
 
 - names: ['одобряющее голосование']
+  handle: approval-voting
 
 - names: ['система голосования', 'конституция']
+  handle: voting-system
 
 - names: ['индивидуальное предпочтение']
+  handle: individual-preference
 
 - names: ['коллективное предпочтение']
+  handle: collective-preference
 
 - names: ['конфигурация индивидуальных предпочтений']
   handle: preference-profile
