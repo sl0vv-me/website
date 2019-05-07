@@ -10,7 +10,7 @@
 <div class="container">
   <% data.glossary.each do |term| %>
     <p>
-      <% term.names.each_with_index.reverse_each do |name, index| %>
+      <% term.names.reverse.each_with_index.reverse_each do |name, index| %>
         <strong><%= name %></strong><%= ',' unless index.zero? %>
       <% end %>
     </p>
