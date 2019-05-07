@@ -6,27 +6,3 @@
     <p class="lead"><%= I18n.translate :summary %></p>
   </div>
 </div>
-
-<div class="container">
-  <% data.terms.each_with_index do |term, term_index| %>
-    <% names = global_term_names term %>
-    <% summ  = term_summary term %>
-
-    <% unless term_index.zero? %>
-      <hr/>
-    <% end %>
-
-    <a href="#<%= term %>"><small>[link]</small></a>
-
-    <p id="<%= term %>">
-      <% names.each do |name, name_index| %>
-        <strong><%= name %></strong><%= ',' unless name_index.zero? %>
-      <% end %>
-
-      <% unless summ.nil? %>
-        &mdash;
-        <%= summ %>
-      <% end %>
-    </p>
-  <% end %>
-</div>
