@@ -10,4 +10,4 @@ git_source(:github) { |s| "https://github.com/#{s}.git" }
 gem 'middleman', '~> 4.3'
 
 # Automatically vendor-prefix stylesheets served by Middleman.
-gem 'middleman-autoprefixer', '~> 2.7'
+gem 'middleman-autoprefixer', '~> 2.10'
