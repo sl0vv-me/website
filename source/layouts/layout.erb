@@ -8,6 +8,7 @@
                                    maximum-scale=1,
                                    shrink-to-fit=no,
                                    user-scalable=no"/>
+
     <title><%= I18n.translate :title %> | <%= I18n.translate :summary %></title>
     <%= stylesheet_link_tag :site %>
     <%= javascript_include_tag :site %>
@@ -29,11 +30,6 @@
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <%= link_to I18n.translate(:glossary),
-                        'glossary.html',
-                        class: 'nav-link' %>
-          </li>
         </ul>
       </div>
     </nav>
