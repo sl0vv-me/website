@@ -16,7 +16,10 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <%= link_to I18n.translate(:title), 'index.html', class: 'navbar-brand' %>
+      <% link_to 'index.html', class: 'navbar-brand' do %>
+        <%= image_tag 'logo.jpg', width: 30, height: 30, alt: '' %>
+        <%= I18n.translate :title %>
+      <% end %>
 
       <button class="navbar-toggler"
               type="button"
