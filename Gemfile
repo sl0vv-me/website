@@ -2,8 +2,6 @@
 
 source 'https://rubygems.org'
 
-git_source(:github) { |s| "https://github.com/#{s}.git" }
-
 # A static site generator. Provides dozens of templating languages (Haml, Sass,
 # Compass, Slim, CoffeeScript, and more). Makes minification, compression,
 # cache busting, Yaml data (and more) an easy part of your development cycle.
