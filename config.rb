@@ -7,6 +7,10 @@ set :js_dir,     'assets/javascripts'
 
 set :sass_assets_paths, %w[node_modules]
 
+page '/*.xml',  layout: false
+page '/*.json', layout: false
+page '/*.txt',  layout: false
+
 activate :i18n, mount_at_root: :ru
 
 activate :autoprefixer do |prefix|
