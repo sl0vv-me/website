@@ -1,7 +1,9 @@
 ---
 ---
+<% content_for :title, translate('manifesto.title') %>
+
 <div class="container">
-  <h1 class="my-5"><%= translate 'manifesto.title' %></h1>
+  <h1 class="my-5"><%= yield_content :title %></h1>
 
   <%= partial 'manifesto_card', locals: {
         title: translate('manifesto.ethical_position.title'),
