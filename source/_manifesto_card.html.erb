@@ -2,9 +2,11 @@
   <div class="card-body">
     <h2 class="card-title"><%= title %></h2>
     <p class="card-text lead"><%= text %></p>
-    <% link_to link_url, class: 'card-link', target: :_blank do %>
-      <%= translate :learn_more %>
-      <i class="fas fa-external-link-alt"></i>
+    <% if link_url.present? %>
+      <% link_to link_url, class: 'card-link', target: :_blank do %>
+        <%= translate :learn_more %>
+        <i class="fas fa-external-link-alt"></i>
+      <% end %>
     <% end %>
   </div>
 </div>
