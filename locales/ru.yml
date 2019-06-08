@@ -6,4 +6,5 @@ ru:
     и методах коллективного принятия решений.
   telegram_channel: Канал в Telegram
   telegram_chat: Чат в Telegram
-  manifesto: Манифест
+  manifesto:
+    title: Манифест
