@@ -9,7 +9,7 @@
                                    shrink-to-fit=no,
                                    user-scalable=no"/>
 
-    <title><%= I18n.translate :title %> | <%= I18n.translate :summary %></title>
+    <title><%= translate :title %> | <%= translate :summary %></title>
     <%= favicon_tag 'logo.jpg' %>
     <%= stylesheet_link_tag :site %>
     <%= javascript_include_tag :site %>
@@ -18,7 +18,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <% link_to 'index.html', class: 'navbar-brand' do %>
         <%= image_tag 'logo.jpg', width: 30, height: 30, alt: '' %>
-        <%= I18n.translate :title %>
+        <%= translate :title %>
       <% end %>
 
       <button class="navbar-toggler"

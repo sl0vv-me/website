@@ -2,9 +2,9 @@
 ---
 <div class="jumbotron jumbotron-fluid text-center">
   <div class="container">
-    <h1><%= I18n.translate :title %></h1>
-    <p class="lead"><%= I18n.translate :summary %></p>
-    <%= link_to I18n.translate(:manifesto),
+    <h1><%= translate :title %></h1>
+    <p class="lead"><%= translate :summary %></p>
+    <%= link_to translate(:manifesto),
                 'manifesto.html',
                 class: 'btn btn-success btn-lg' %>
   </div>
@@ -14,14 +14,14 @@
   <div class="text-center">
     <% link_to 'https://t.me/crypto_libertarian' do %>
       <i class="fab fa-telegram"></i>
-      <%= I18n.translate :telegram_channel %>
+      <%= translate :telegram_channel %>
     <% end %>
   </div>
 
   <div class="text-center">
     <% link_to 'https://t.me/crypto_libertarian_chat' do %>
       <i class="fab fa-telegram"></i>
-      <%= I18n.translate :telegram_chat %>
+      <%= translate :telegram_chat %>
     <% end %>
   </div>
 </div>
