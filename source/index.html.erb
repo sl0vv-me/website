@@ -4,6 +4,9 @@
   <div class="container">
     <h1><%= I18n.translate :title %></h1>
     <p class="lead"><%= I18n.translate :summary %></p>
+    <%= link_to I18n.translate(:manifesto),
+                'manifesto.html',
+                class: 'btn btn-success btn-lg' %>
   </div>
 </div>
 
