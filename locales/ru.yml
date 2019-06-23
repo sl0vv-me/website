@@ -1,11 +1,7 @@
 ---
 ru:
   title: Crypto-Libertarian
-  summary: >-
-    Проект про либертарианство, крипто-анархизм
-    и методы коллективного принятия решений.
-  # TODO: Improve description
-  description:
+  description: >-
     Проект про либертарианство, крипто-анархизм
     и методы коллективного принятия решений.
   telegram_channel: Канал в Telegram

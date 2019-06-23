@@ -26,7 +26,7 @@ helpers do
     if current_page.data.title
       "#{current_page.data.title} | #{translate(:title)}"
     else
-      "#{translate(:title)} - #{translate(:summary)}"
+      translate :title
     end
   end
 
