@@ -9,13 +9,7 @@
                                    shrink-to-fit=no,
                                    user-scalable=no"/>
 
-    <title>
-      <% if current_page.data.title %>
-        <%= current_page.data.title %> | <%= translate :title %>
-      <% else %>
-        <%= translate :title %> - <%= translate :summary %>
-      <% end %>
-    </title>
+    <title><%= title %></title>
 
     <%= favicon_tag 'logo.jpg' %>
     <%= stylesheet_link_tag :site %>

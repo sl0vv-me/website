@@ -21,4 +21,12 @@ helpers do
   def translate(*args)
     I18n.translate(*args)
   end
+
+  def title
+    if current_page.data.title
+      "#{current_page.data.title} | #{translate(:title)}"
+    else
+      "#{translate(:title)} - #{translate(:summary)}"
+    end
+  end
 end
