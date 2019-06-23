@@ -4,6 +4,10 @@ ru:
   summary: >-
     Проект про либертарианство, крипто-анархизм
     и методы коллективного принятия решений.
+  # TODO: Improve description
+  description:
+    Проект про либертарианство, крипто-анархизм
+    и методы коллективного принятия решений.
   telegram_channel: Канал в Telegram
   telegram_chat: Чат в Telegram
   youtube_channel: Канал на YouTube

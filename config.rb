@@ -29,4 +29,12 @@ helpers do
       "#{translate(:title)} - #{translate(:summary)}"
     end
   end
+
+  def description
+    if current_page.data.description
+      current_page.data.description
+    else
+      translate :description
+    end
+  end
 end
