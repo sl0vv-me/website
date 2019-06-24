@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+set :base_url, 'https://crypto-libertarian.com'
+
 set :css_dir,    'assets/stylesheets'
 set :fonts_dir,  'assets/fonts'
 set :images_dir, 'assets/images'
@@ -18,12 +20,16 @@ activate :autoprefixer do |prefix|
 end
 
 configure :build do
-  activate :asset_host, host: 'https://crypto-libertarian.com'
+  activate :asset_host, host: config[:base_url]
 end
 
 helpers do
   def translate(*args)
     I18n.translate(*args)
+  end
+
+  def full_url
+    "#{config[:base_url]}#{current_page.url}"
   end
 
   def title
