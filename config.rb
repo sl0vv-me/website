@@ -17,6 +17,10 @@ activate :autoprefixer do |prefix|
   prefix.browsers = 'last 2 versions'
 end
 
+configure :build do
+  activate :asset_host, host: 'https://crypto-libertarian.com'
+end
+
 helpers do
   def translate(*args)
     I18n.translate(*args)
