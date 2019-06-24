@@ -28,7 +28,7 @@ helpers do
     I18n.translate(*args)
   end
 
-  def full_url
+  def canonical_url
     "#{config[:base_url]}#{current_page.url}"
   end
 

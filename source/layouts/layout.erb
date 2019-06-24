@@ -10,6 +10,7 @@
                                    user-scalable=no"/>
 
     <title><%= title %></title>
+    <link rel="canonical" href="<%= canonical_url %>"/>
     <meta name="description" content="<%= description %>"/>
     <meta name="twitter:card" content="summary"/>
     <meta name="twitter:site" content="@kotovalexarian"/>
@@ -18,7 +19,7 @@
     <meta name="twitter:description" content="<%= description %>"/>
     <meta name="twitter:image" content="<%= image_path 'logo.jpg' %>"/>
     <meta property="og:type" content="website"/>
-    <meta property="og:url" content="<%= full_url %>"/>
+    <meta property="og:url" content="<%= canonical_url %>"/>
     <meta property="og:title" content="<%= title %>"/>
     <meta property="og:image" content="<%= image_path 'logo.jpg' %>"/>
 
