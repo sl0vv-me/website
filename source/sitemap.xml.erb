@@ -1,5 +1,3 @@
----
----
 <% resources = sitemap.resources.select { |res| res.source_file =~ /\.html/ } %>
 <% %>
 <?xml version="1.0" encoding="UTF-8"?>
@@ -7,7 +5,6 @@
 <% resources.each do |page| %>
   <url>
     <loc><%= config[:base_url] %><%= page.url %></loc>
-    <priority>0.5</priority>
   </url>
 <% end %>
 </urlset>
