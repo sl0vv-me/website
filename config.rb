@@ -20,6 +20,7 @@ set :js_dir,     'assets/javascripts'
 
 set :sass_assets_paths, %w[node_modules]
 
+page '/*.html', layout: 'layout.html'
 page '/*.xml',  layout: false
 page '/*.json', layout: false
 page '/*.txt',  layout: false
