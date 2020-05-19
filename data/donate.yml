@@ -1,33 +1,33 @@
-- full_name: DonationAlerts
+- title: DonationAlerts
   value: 'https://www.donationalerts.com/r/crypto_libertarian'
   link: 'https://www.donationalerts.com/r/crypto_libertarian'
 
-- full_name: Bitcoin
-  short_name: BTC
+- title: Bitcoin
+  subtitle: BTC
   value: '35nA4yNtWUMGuVZCa4y49NwRDmsb6t4VQy'
   history: https://chain.so/a/v8mtvta
 
-- full_name: Ethereum
-  short_name: ETH
+- title: Ethereum
+  subtitle: ETH
   value: '0x741c815266E6A30114874d55074C1D0FDaA5d3c3'
   history: https://etherscan.io/address/0x741c815266E6A30114874d55074C1D0FDaA5d3c3
 
-- full_name: Litecoin
-  short_name: LTC
+- title: Litecoin
+  subtitle: LTC
   value: '34N3uDuH3Fh2AFMc84vB86TvA7F8nSD4HG'
   history: https://chain.so/a/u57ypz0
 
-- full_name: Dash
-  short_name: DASH
+- title: Dash
+  subtitle: DASH
   value: 'XszebNZepbAqnW6HFGtt42QQ3xz7xC8vXb'
   history: https://chain.so/a/nle35xo
 
-- full_name: Zcash
-  short_name: ZEC
+- title: Zcash
+  subtitle: ZEC
   value: 't1YNFM5sdeYT1267fZjR2EmWdNCSAx1qHC1'
   history: https://chain.so/a/jaiuip0
 
-- full_name: Dogecoin
-  short_name: DOGE
+- title: Dogecoin
+  subtitle: DOGE
   value: 'D9aw49SqyF647uuAgnNz7sX1sYebmA9xRt'
   history: https://chain.so/a/3_d3d7m

@@ -7,15 +7,15 @@ title: donate
       <div class="col-md-6">
         <div class="card mt-4">
           <div class="card-body">
-            <% if donate.full_name %>
+            <% if donate.title %>
               <h5 class="card-title">
-                <%= donate.full_name %>
+                <%= donate.title %>
               </h5>
             <% end %>
 
-            <% if donate.short_name %>
+            <% if donate.subtitle %>
               <h6 class="card-subtitle text-muted">
-                <%= donate.short_name %>
+                <%= donate.subtitle %>
               </h6>
             <% end %>
 
