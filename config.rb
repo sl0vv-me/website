@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-set :base_url, 'https://crypto-libertarian.com'
+set :base_url, 'https://www.crypto-libertarian.com'
 
 set :css_dir,    'assets/stylesheets'
 set :fonts_dir,  'assets/fonts'
