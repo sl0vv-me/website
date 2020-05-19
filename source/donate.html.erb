@@ -1,3 +1,36 @@
 ---
 title: donate
 ---
+<div class="container">
+  <div class="row">
+    <% data.donate.each do |donate| %>
+      <div class="col-md-6">
+        <div class="card mt-4">
+          <div class="card-body">
+            <h5 class="card-title">
+              <%= donate.full_name %>
+            </h5>
+
+            <h6 class="card-subtitle text-muted">
+              <%= donate.short_name %>
+            </h6>
+
+            <p class="card-text mt-2">
+              <code><%= donate.value %></code>
+            </p>
+
+            <% link_to donate.history,
+                       target: :_blank,
+                       class: 'card-link' do %>
+              <%= translate :history %>
+
+              <small class="text-muted">
+                <i class="fas fa-external-link-alt"></i>
+              </small>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
