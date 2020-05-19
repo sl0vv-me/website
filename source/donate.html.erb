@@ -7,26 +7,46 @@ title: donate
       <div class="col-md-6">
         <div class="card mt-4">
           <div class="card-body">
-            <h5 class="card-title">
-              <%= donate.full_name %>
-            </h5>
+            <% if donate.full_name %>
+              <h5 class="card-title">
+                <%= donate.full_name %>
+              </h5>
+            <% end %>
 
-            <h6 class="card-subtitle text-muted">
-              <%= donate.short_name %>
-            </h6>
+            <% if donate.short_name %>
+              <h6 class="card-subtitle text-muted">
+                <%= donate.short_name %>
+              </h6>
+            <% end %>
 
-            <p class="card-text mt-2">
-              <code><%= donate.value %></code>
-            </p>
+            <% if donate.value %>
+              <p class="card-text mt-2">
+                <code><%= donate.value %></code>
+              </p>
+            <% end %>
 
-            <% link_to donate.history,
-                       target: :_blank,
-                       class: 'card-link' do %>
-              <%= translate :history %>
+            <% if donate.link %>
+              <% link_to donate.link,
+                         target: :_blank,
+                         class: 'card-link' do %>
+                <%= translate :link %>
 
-              <small class="text-muted">
-                <i class="fas fa-external-link-alt"></i>
-              </small>
+                <small class="text-muted">
+                  <i class="fas fa-external-link-alt"></i>
+                </small>
+              <% end %>
+            <% end %>
+
+            <% if donate.history %>
+              <% link_to donate.history,
+                         target: :_blank,
+                         class: 'card-link' do %>
+                <%= translate :history %>
+
+                <small class="text-muted">
+                  <i class="fas fa-external-link-alt"></i>
+                </small>
+              <% end %>
             <% end %>
           </div>
         </div>
