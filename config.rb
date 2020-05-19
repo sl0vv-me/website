@@ -28,8 +28,12 @@ helpers do
     I18n.translate(*args)
   end
 
+  def base_url
+    config[:base_url]
+  end
+
   def canonical_url
-    "#{config[:base_url]}#{current_page.url}"
+    "#{base_url}#{current_page.url}"
   end
 
   def title
