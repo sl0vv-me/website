@@ -54,7 +54,7 @@ helpers do
 
   def title
     if current_page.data.title
-      "#{current_page.data.title} | #{translate(:title)}"
+      "#{translate(current_page.data.title)} | #{translate(:title)}"
     else
       translate :title
     end
@@ -62,9 +62,13 @@ helpers do
 
   def description
     if current_page.data.description
-      current_page.data.description
+      translate current_page.data.description
     else
       translate :description
     end
+  end
+
+  def active_class(url)
+    return ' active ' if current_page.url == url
   end
 end
