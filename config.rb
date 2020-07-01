@@ -7,10 +7,8 @@ set(
   telegram_channel: 'https://t.me/crypto_libertarian',
   telegram_chat: 'https://t.me/crypto_libertarian_chat',
   youtube_channel: 'https://www.youtube.com/channel/UCj9VPPL4riHinL3N9RbmLww',
-  peertube_channel: 'https://peertube.crypto-libertarian.com/video-channels/crypto_libertarian/videos',
   medium_blog: 'https://medium.com/crypto-libertarian',
   publications_archive: 'https://pub.crypto-libertarian.com',
-  wiki: 'https://wiki.crypto-libertarian.com',
   git: 'https://git.crypto-libertarian.com',
 )
 
