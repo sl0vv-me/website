@@ -1,0 +1,15 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Contact: mailto:kotovalexarian@gmail.com
+Encryption: https://crypto-libertarian.com/kotovalexarian.asc
+Preferred-Languages: ru, en
+Canonical: https://crypto-libertarian.com/.well-known/security.txt
+-----BEGIN PGP SIGNATURE-----
+
+iI8EARMKADcWIQR1kFI/x7FcxubCy7j1yCyi4w/WEgUCXwMpPhkca290b3ZhbGV4
+YXJpYW5AZ21haWwuY29tAAoJEPXILKLjD9YSrQABANLFBz/sVzBnIJTEih0Q4KWg
+JKaZ3YImaJ/Axm1LQaRyAP9ZHybdN5IhwLxq74seGz6PIxQ5cwmn2kokQHXGZuHa
+Qw==
+=3NG+
+-----END PGP SIGNATURE-----
