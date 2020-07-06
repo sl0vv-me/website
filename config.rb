@@ -33,6 +33,19 @@ configure :build do
   activate :asset_host, host: config[:base_url]
 end
 
+webpack_command =
+  if build?
+    './node_modules/webpack/bin/webpack.js --bail -p'
+  else
+    './node_modules/webpack/bin/webpack.js --watch -d --progress --color'
+  end
+
+activate :external_pipeline,
+         name: :webpack,
+         command: webpack_command,
+         source: 'dist/webpack',
+         latency: 1
+
 helpers do
   def translate(*args)
     I18n.translate(*args)

@@ -16,7 +16,6 @@
 ## Specific to RubyMotion:
 .dat*
 .repl_history
-build/
 *.bridgesupport
 build-iPhoneOS/
 build-iPhoneSimulator/
@@ -38,3 +37,7 @@ build-iPhoneSimulator/
 ## NPM and Yarn files:
 /node_modules/
 /yarn-error.log
+
+## Generated files:
+/build/
+/dist/
