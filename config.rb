@@ -65,7 +65,11 @@ helpers do
 
   def title
     if current_page.data.title
-      "#{translate(current_page.data.title)} | #{translate(:title)}"
+      if current_page.data.title =~ /\A~(\w+)\z/
+        "#{translate($1)} | #{translate(:title)}"
+      else
+        "#{current_page.data.title} | #{translate(:title)}"
+      end
     else
       translate :title
     end
@@ -73,7 +77,11 @@ helpers do
 
   def description
     if current_page.data.description
-      translate current_page.data.description
+      if current_page.data.description =~ /\A~(\w+)\z/
+        translate $1
+      else
+        current_page.data.description
+      end
     else
       translate :description
     end
