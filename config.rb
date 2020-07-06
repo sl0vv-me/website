@@ -1,5 +1,11 @@
 # frozen_string_literal: true
 
+WEBPACK_SCRIPT =
+  File.expand_path('node_modules/webpack/bin/webpack.js', __dir__).freeze
+
+WEBPACK_BUILD = "#{WEBPACK_SCRIPT} --bail -p"
+WEBPACK_RUN   = "#{WEBPACK_SCRIPT} --watch -d --progress --color"
+
 set :base_url, 'https://crypto-libertarian.com'
 
 set(
@@ -34,16 +40,9 @@ configure :build do
   activate :asset_host, host: config[:base_url]
 end
 
-webpack_command =
-  if build?
-    './node_modules/webpack/bin/webpack.js --bail -p'
-  else
-    './node_modules/webpack/bin/webpack.js --watch -d --progress --color'
-  end
-
 activate :external_pipeline,
          name: :webpack,
-         command: webpack_command,
+         command: build? ? WEBPACK_BUILD : WEBPACK_RUN,
          source: File.expand_path('tmp/webpack', __dir__),
          latency: 1
 
