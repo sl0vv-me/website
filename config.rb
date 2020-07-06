@@ -44,7 +44,7 @@ webpack_command =
 activate :external_pipeline,
          name: :webpack,
          command: webpack_command,
-         source: 'dist/webpack',
+         source: File.expand_path('tmp/webpack', __dir__),
          latency: 1
 
 helpers do
