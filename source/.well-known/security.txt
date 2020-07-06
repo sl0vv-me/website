@@ -2,9 +2,9 @@
 Hash: SHA512
 
 Contact: mailto:kotovalexarian@gmail.com
-Encryption: <%= base_url %>/pgp/kotovalexarian.asc
+Encryption: https://crypto-libertarian.com/pgp/kotovalexarian.asc
 Preferred-Languages: ru, en
-Canonical: <%= base_url %>/.well-known/security.txt
+Canonical: https://crypto-libertarian.com/.well-known/security.txt
 -----BEGIN PGP SIGNATURE-----
 
 iI8EARMKADcWIQR1kFI/x7FcxubCy7j1yCyi4w/WEgUCXwMqtBkca290b3ZhbGV4
