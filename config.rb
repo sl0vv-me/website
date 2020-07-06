@@ -64,26 +64,26 @@ helpers do
   end
 
   def title
-    if current_page.data.title
+    if current_page.data.title.blank?
+      translate :title
+    else
       if current_page.data.title =~ /\A~(\w+)\z/
         "#{translate($1)} | #{translate(:title)}"
       else
         "#{current_page.data.title} | #{translate(:title)}"
       end
-    else
-      translate :title
     end
   end
 
   def description
-    if current_page.data.description
+    if current_page.data.description.blank?
+      translate :description
+    else
       if current_page.data.description =~ /\A~(\w+)\z/
         translate $1
       else
         current_page.data.description
       end
-    else
-      translate :description
     end
   end
 
