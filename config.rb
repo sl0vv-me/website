@@ -22,6 +22,7 @@ page '/*.html', layout: 'layout.html'
 page '/*.xml',  layout: false
 page '/*.json', layout: false
 page '/*.txt',  layout: false
+page '/*.asc',  layout: false, content_type: 'text/plain'
 
 activate :i18n, mount_at_root: :ru
 
