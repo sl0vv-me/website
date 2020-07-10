@@ -45,6 +45,12 @@ activate :external_pipeline,
          source: File.expand_path('tmp/webpack', __dir__),
          latency: 1
 
+data.library.each do |library_item|
+  proxy "/library/#{library_item.id}.html",
+        '/library/template.html',
+        ignore: true
+end
+
 helpers do
   def translate(*args)
     I18n.translate(*args)
