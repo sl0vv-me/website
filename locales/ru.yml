@@ -14,3 +14,11 @@ ru:
   link: Ссылка
   history: История
   library: Библиотека
+  isbn13: ISBN-13
+  isbn10: ISBN-10
+  authors: Авторы
+  edition: Издание
+  binding: Переплёт
+  publisher: Издатель
+  year: Год
+  month: Месяц

@@ -1,2 +1,31 @@
 ---
 ---
+<div class="container mt-4">
+  <h1><%= library_item.title.presence or raise %></h1>
+
+  <dl class="mt-4">
+    <dt><%= translate :isbn13 %></dt>
+    <dd><%= library_item.isbn13 %></dd>
+
+    <dt><%= translate :isbn10 %></dt>
+    <dd><%= library_item.isbn10 %></dd>
+
+    <dt><%= translate :authors %></dt>
+    <dd><%= library_item.authors %></dd>
+
+    <dt><%= translate :edition %></dt>
+    <dd><%= library_item.edition %></dd>
+
+    <dt><%= translate :binding %></dt>
+    <dd><%= library_item.binding %></dd>
+
+    <dt><%= translate :publisher %></dt>
+    <dd><%= library_item.publisher %></dd>
+
+    <dt><%= translate :year %></dt>
+    <dd><%= library_item.year %></dd>
+
+    <dt><%= translate :month %></dt>
+    <dd><%= library_item.month %></dd>
+  </dl>
+</div>

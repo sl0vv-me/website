@@ -48,7 +48,8 @@ activate :external_pipeline,
 data.library.each do |library_item|
   proxy "/library/#{library_item.id}.html",
         '/library/template.html',
-        ignore: true
+        ignore: true,
+        locals: { library_item: library_item }
 end
 
 helpers do
