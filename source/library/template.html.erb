@@ -12,6 +12,9 @@
 
     <div class="col-sm-6 col-lg-4">
       <dl class="mt-4">
+        <dt><%= translate :language %></dt>
+        <dd><%= library_item.language.presence or raise %></dd>
+
         <dt><%= translate :isbn13 %></dt>
         <dd><%= library_item.isbn13 %></dd>
 
