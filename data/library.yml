@@ -9,6 +9,11 @@
   publisher: 'Ludwig von Mises Institute'
   year: 2015
   month: 9
+  downloads:
+    - text: pdf
+      url: 'https://matrix.crypto-libertarian.com/_matrix/media/r0/download/crypto-libertarian.com/mUpBjfXmIVyGIWXBtZKDoyld'
+    - text: epub
+      url: 'https://matrix.crypto-libertarian.com/_matrix/media/r0/download/crypto-libertarian.com/lmwQqykelhWDzWPqPHuqecNG'
   description: >
     Знаменитая монография Стефана Кинселлы, посвящённая интеллектуальной
     собственности (ИС) в либертарианстве. В начале автор объясняет основы
@@ -44,6 +49,9 @@
   publisher: 'Cambridge University Press'
   year: 2008
   month: 6
+  downloads:
+    - text: pdf
+      url: 'https://matrix.crypto-libertarian.com/_matrix/media/r0/download/crypto-libertarian.com/WzLNJvewtsxytKQSvKXlCJEg'
   description: >
     <a href="/library/against-intellectual-property.html">Ранее</a>
     мы публиковали монографию Стефана Кинселлы «<i>Against Intellectual

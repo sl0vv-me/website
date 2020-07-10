@@ -38,6 +38,13 @@
 
         <dt><%= translate :month %></dt>
         <dd><%= library_item.month %></dd>
+
+        <dt><%= translate :downloads %></dt>
+        <dd>
+          <% library_item.downloads.each do |downloads_item| %>
+            <%= link_to downloads_item.text, downloads_item.url %>
+          <% end %>
+        </dd>
       </dl>
     </div>
   </div>
