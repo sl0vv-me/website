@@ -1,7 +1,7 @@
 ---
 ---
 <div class="container mt-4">
-  <h1><%= library_item.title.presence or raise %></h1>
+  <h1><%= library_item.title %></h1>
 
   <div class="row mt-4">
     <div class="col-sm-6 col-lg-4">
@@ -13,7 +13,7 @@
     <div class="col-sm-6 col-lg-4">
       <dl class="mt-4">
         <dt><%= translate :language %></dt>
-        <dd><%= library_item.language.presence or raise %></dd>
+        <dd><%= library_item.language %></dd>
 
         <dt><%= translate :isbn13 %></dt>
         <dd><%= library_item.isbn13 %></dd>
@@ -51,5 +51,5 @@
 
   <hr/>
 
-  <p><%= (library_item.description.presence or raise).gsub('::', ':') %></p>
+  <p><%= library_item.description.gsub('::', ':') %></p>
 </div>
