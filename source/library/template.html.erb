@@ -3,7 +3,7 @@
 <div class="container mt-4">
   <h1><%= library_item.title.presence or raise %></h1>
 
-  <div class="row">
+  <div class="row mt-4">
     <div class="col-sm-6 col-lg-4">
       <%= image_tag library_item_image(library_item),
                     class: 'img-fluid',
