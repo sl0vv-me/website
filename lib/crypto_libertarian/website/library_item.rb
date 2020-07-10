@@ -16,7 +16,7 @@ module CryptoLibertarian
       attr_reader(*ATTRIBUTES)
 
       def initialize(options)
-        options = Hash(options)
+        options = Hash(options.dup)
 
         ATTRIBUTES.each do |key|
           send "#{key}=", options.delete(key)
@@ -128,7 +128,7 @@ module CryptoLibertarian
         attr_reader(*ATTRIBUTES)
 
         def initialize(options)
-          options = Hash(options)
+          options = Hash(options.dup)
 
           ATTRIBUTES.each do |key|
             send "#{key}=", options.delete(key)
