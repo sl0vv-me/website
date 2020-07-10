@@ -28,4 +28,6 @@
     <dt><%= translate :month %></dt>
     <dd><%= library_item.month %></dd>
   </dl>
+
+  <p><%= library_item.description.split("\n").join('<br/><br/>') %></p>
 </div>
