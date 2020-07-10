@@ -107,4 +107,11 @@ helpers do
       raise TypeError
     end
   end
+
+  def library_item_image(library_item)
+    id  = library_item.id.presence      or raise
+    ext = library_item.img_ext.presence or raise
+
+    "library/#{id}.#{ext}"
+  end
 end

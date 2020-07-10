@@ -4,7 +4,13 @@
   <h1><%= library_item.title.presence or raise %></h1>
 
   <div class="row">
-    <div class="col-lg-6">
+    <div class="col-sm-6 col-lg-4">
+      <%= image_tag library_item_image(library_item),
+                    class: 'img-fluid',
+                    alt: translate(:cover) %>
+    </div>
+
+    <div class="col-sm-6 col-lg-4">
       <dl class="mt-4">
         <dt><%= translate :isbn13 %></dt>
         <dd><%= library_item.isbn13 %></dd>
@@ -31,9 +37,9 @@
         <dd><%= library_item.month %></dd>
       </dl>
     </div>
-
-    <div class="col-lg-6">
-      <p><%= library_item.description.split("\n").join('<br/><br/>') %></p>
-    </div>
   </div>
+
+  <hr/>
+
+  <p><%= library_item.description.split("\n").join('<br/><br/>') %></p>
 </div>
