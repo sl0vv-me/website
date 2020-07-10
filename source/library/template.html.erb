@@ -44,5 +44,5 @@
 
   <hr/>
 
-  <p><%= library_item.description.split("\n").join('<br/><br/>') %></p>
+  <p><%= (library_item.description.presence or raise).gsub('::', ':') %></p>
 </div>
