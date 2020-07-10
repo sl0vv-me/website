@@ -116,7 +116,7 @@ helpers do
   def library
     @library ||= data.library.map do |library_item_options|
       CryptoLibertarian::Website::LibraryItem.new library_item_options
-    end.freeze
+    end.sort_by(&:title).freeze
   end
 
   def library_item_image(library_item)
