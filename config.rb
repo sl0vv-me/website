@@ -86,7 +86,18 @@ helpers do
     end
   end
 
-  def active_class(url)
-    return ' active ' if current_page.url == url
+  def active_class(*urls)
+    return ' active ' if urls.any? { |url| active_class? url }
+  end
+
+  def active_class?(url)
+    case url
+    when String
+      current_page.url == url
+    when Regexp
+      current_page.url.match? url
+    else
+      raise TypeError
+    end
   end
 end
