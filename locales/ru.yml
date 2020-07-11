@@ -26,6 +26,8 @@ ru:
   language: Язык
   downloads: Скачать
   Matrix: Matrix
+  Matrix_description: >
+    Matrix - децентрализованный (федеративный) протокол обмена сообщениями.
   Matrix_foreword: >
     Мы поддерживаем сервер <a href="https://matrix.org">Matrix</a> -
     децентрализованного (федеративного) протокола обмена сообщениями.
