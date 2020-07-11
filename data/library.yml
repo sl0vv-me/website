@@ -1,10 +1,35 @@
-- id: against-intellectual-property
-  img_ext: jpg
+- id: market-anarchism-as-constitutionalism
+  title: 'Market Anarchism as Constitutionalism'
+  authors: 'Long, Roderick T.'
   language: en
+  year: 2008
+  month: 1
+  downloads:
+    - text: pdf
+      url: 'https://matrix.crypto-libertarian.com/_matrix/media/r0/download/crypto-libertarian.com/hGEFcooSEbTTmPCcPaUnUSER'
+  description: >
+    Статья профессора философии и либертарианца
+    <a href="https://ru.wikipedia.org/wiki/%D0%9B%D0%BE%D0%BD%D0%B3,_%D0%A0%D0%BE%D0%B4%D0%B5%D1%80%D0%B8%D0%BA_%D0%A2%D1%80%D0%B5%D0%B9%D1%81%D0%B8">Родерика Лонга</a>,
+    в которой он рассматривает возражения против анархии от сторонников
+    минимального государства, в том числе известные тезисы Джона Локка о её
+    «неудобстве». Лонг утверждает, что аргументы Локка гораздо сильнее работают
+    против государства, и предлагает минархистам рассматривать анархический
+    порядок как своеобразный подвид конституционализма.
+    <br/>
+    Поскольку реальные конституции не имеют никакой магической силы, а лишь
+    повторяют те паттерны поведения, которым люди сами массово следуют,
+    анархия — иной способ представить систему сдержек и противовесов
+    для справедливого отправления права, ведь ни государство, ни анархия
+    не могут гарантировать определённый результат, поскольку состоят лишь
+    из действующих людей и определённых стимулов.
+
+- id: against-intellectual-property
   title: 'Against Intellectual Property'
+  authors: 'Kinsella, Stephan N.'
+  language: en
+  img_ext: jpg
   isbn13: '9781933550329'
   isbn10: '1933550325'
-  authors: 'Kinsella, Stephan N.'
   binding: 'Paperback'
   publisher: 'Ludwig von Mises Institute'
   year: 2015
@@ -38,12 +63,12 @@
     <a href="https://anticopyright.ru/wiki/%D0%A1%D1%82%D0%B5%D1%84%D0%B0%D0%BD_%D0%9A%D0%B8%D0%BD%D1%81%D0%B5%D0%BB%D0%BB%D0%B0._%D0%9F%D1%80%D0%BE%D1%82%D0%B8%D0%B2_%D0%B8%D0%BD%D1%82%D0%B5%D0%BB%D0%BB%D0%B5%D0%BA%D1%82%D1%83%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B9_%D1%81%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D0%B8">тут</a>.
 
 - id: against-intellectual-monopoly
-  img_ext: jpg
-  language: en
   title: 'Against Intellectual Monopoly'
+  authors: 'Boldrin, Michele; Levine, David K.'
+  language: en
+  img_ext: jpg
   isbn13: '9780521879286'
   isbn10: '0521879280'
-  authors: 'Boldrin, Michele; Levine, David K.'
   edition: 1
   binding: 'Hardcover'
   publisher: 'Cambridge University Press'

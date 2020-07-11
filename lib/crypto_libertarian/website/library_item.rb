@@ -9,8 +9,9 @@ module CryptoLibertarian
       ISBN_RE = /\A\d+\z/.freeze
 
       ATTRIBUTES = %w[
-        id img_ext language title isbn13 isbn10 authors edition binding
-        publisher year month description downloads
+        id title authors language
+        img_ext isbn13 isbn10 edition binding publisher year month
+        downloads description
       ].freeze
 
       attr_reader(*ATTRIBUTES)
@@ -36,13 +37,12 @@ module CryptoLibertarian
         @id = value
       end
 
-      def img_ext=(value)
-        return @img_ext = nil if value.blank?
+      def title=(value)
+        @title = String(value).freeze
+      end
 
-        value = String(value).freeze
-        raise "Invalid value: #{value.inspect}" unless value.match? IMG_EXT_RE
-
-        @img_ext = value
+      def authors=(value)
+        @authors = String(value).freeze
       end
 
       def language=(value)
@@ -52,8 +52,13 @@ module CryptoLibertarian
         @language = value
       end
 
-      def title=(value)
-        @title = String(value).freeze
+      def img_ext=(value)
+        return @img_ext = nil if value.blank?
+
+        value = String(value).freeze
+        raise "Invalid value: #{value.inspect}" unless value.match? IMG_EXT_RE
+
+        @img_ext = value
       end
 
       def isbn13=(value)
@@ -72,10 +77,6 @@ module CryptoLibertarian
         raise "Invalid value: #{value.inspect}" unless value.match? ISBN_RE
 
         @isbn10 = value
-      end
-
-      def authors=(value)
-        @authors = String(value).freeze
       end
 
       def edition=(value)
@@ -114,12 +115,16 @@ module CryptoLibertarian
         @month = value
       end
 
-      def description=(value)
-        @description = String(value).freeze
+      def downloads=(value)
+        raise "Invalid value: #{value.inspect}" if value.blank?
+
+        @downloads = Array(value).map { |item| Download.new item }.freeze
       end
 
-      def downloads=(value)
-        @downloads = Array(value).map { |item| Download.new item }.freeze
+      def description=(value)
+        raise "Invalid value: #{value.inspect}" if value.blank?
+
+        @description = String(value).freeze
       end
 
       class Download
