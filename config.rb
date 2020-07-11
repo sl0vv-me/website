@@ -3,7 +3,7 @@
 lib = File.expand_path('lib', __dir__).freeze
 $LOAD_PATH.unshift lib unless $LOAD_PATH.include? lib
 
-require 'crypto_libertarian/website/library_item'
+require 'crypto_libertarian/website'
 
 WEBPACK_SCRIPT =
   File.expand_path('node_modules/webpack/bin/webpack.js', __dir__).freeze
