@@ -9,8 +9,8 @@ module CryptoLibertarian
       ISBN_RE = /\A\d+\z/.freeze
 
       ATTRIBUTES = %w[
-        id title authors language
-        img_ext isbn13 isbn10 edition binding publisher year month
+        id title language
+        img_ext isbn13 isbn10 authors edition binding publisher year month
         downloads description
       ].freeze
 
@@ -39,10 +39,6 @@ module CryptoLibertarian
 
       def title=(value)
         @title = String(value).freeze
-      end
-
-      def authors=(value)
-        @authors = String(value).freeze
       end
 
       def language=(value)
@@ -77,6 +73,12 @@ module CryptoLibertarian
         raise "Invalid value: #{value.inspect}" unless value.match? ISBN_RE
 
         @isbn10 = value
+      end
+
+      def authors=(value)
+        return @authors = nil if value.blank?
+
+        @authors = String(value).freeze
       end
 
       def edition=(value)

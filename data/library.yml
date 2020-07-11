@@ -1,7 +1,24 @@
+- id: anarchism-minarchism
+  title: 'Anarchism/Minarchism: Is a Government Part of a Free Country?'
+  language: en
+  img_ext: jpg
+  isbn13: '9780754660668'
+  isbn10: '0754660664'
+  binding: 'Hardcover'
+  publisher: 'Routledge'
+  year: 2008
+  month: 1
+  downloads:
+    - text: pdf
+      url: 'https://matrix.crypto-libertarian.com/_matrix/media/r0/download/crypto-libertarian.com/sJUlfbGoypQpOAAyhZpJHHQA'
+  description: >
+    Книга является сборником статей от разных либертарианских авторов на тему
+    анархии и минимального правительства.
+
 - id: market-anarchism-as-constitutionalism
   title: 'Market Anarchism as Constitutionalism'
-  authors: 'Long, Roderick T.'
   language: en
+  authors: 'Long, Roderick T.'
   year: 2008
   month: 1
   downloads:
@@ -25,11 +42,11 @@
 
 - id: against-intellectual-property
   title: 'Against Intellectual Property'
-  authors: 'Kinsella, Stephan N.'
   language: en
   img_ext: jpg
   isbn13: '9781933550329'
   isbn10: '1933550325'
+  authors: 'Kinsella, Stephan N.'
   binding: 'Paperback'
   publisher: 'Ludwig von Mises Institute'
   year: 2015
@@ -64,11 +81,11 @@
 
 - id: against-intellectual-monopoly
   title: 'Against Intellectual Monopoly'
-  authors: 'Boldrin, Michele; Levine, David K.'
   language: en
   img_ext: jpg
   isbn13: '9780521879286'
   isbn10: '0521879280'
+  authors: 'Boldrin, Michele; Levine, David K.'
   edition: 1
   binding: 'Hardcover'
   publisher: 'Cambridge University Press'
