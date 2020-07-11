@@ -25,3 +25,28 @@ ru:
   cover: Обложка
   language: Язык
   downloads: Скачать
+  Matrix: Matrix
+  Matrix_foreword: >
+    Мы поддерживаем сервер <a href="https://matrix.org">Matrix</a> -
+    децентрализованного (федеративного) протокола обмена сообщениями.
+    В качестве клиента мы рекомендуем использовать
+    <a href="https://riot.im">Riot</a>.
+    <br/>
+    <br/>
+    На сервере открыта регистрация, однако пока мы не можем гарантировать
+    долговечность сервера и рекомендуем использовать для регистрации другие
+    сервера (например, <code>https://matrix-client.matrix.org</code> или
+    <code>https://feneas.org</code>). Клиент при регистрации сам предложит
+    вам сервер, вам не нужно выбирать.
+    <br/>
+    <br/>
+    После регистрации (на любом сервере) заходите в наш основной чат&#58;
+    <code>#chat:crypto-libertarian.com</code>.
+  Server_info: Информация о сервере
+  Server_name_public_suffix: Имя сервера (публичный суффикс)
+  Base_url_for_sign_up_and_sign_in: Базовый URL (для регистрации и входа)
+  Username_example: Пример имени пользователя
+  Room_name_example: Пример имени комнаты
+  Community_name_example: Пример имени сообщества
+  Base_url_for_sign_up_and_sign_in: Базовый URL (для регистрации и входа)
+  Static_content_view: Просмотр статического содержимого
