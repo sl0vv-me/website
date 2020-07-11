@@ -44,6 +44,17 @@ ru:
     <br/>
     После регистрации (на любом сервере) заходите в наш основной чат&#58;
     <code>#chat:crypto-libertarian.com</code>.
+  Matrix_capabilities: Возможности Matrix
+  Transp_comm_between_users_of_diff_servers: >
+    Прозрачное взаимодействие между пользователями разных серверов
+  End_to_end_encryption_of_private_and_group_chats: >
+    Сквозное шифрование личных и групповых чатов
+  Sync_of_msgs_and_media_between_devices: >
+    Синхронизация сообщений и медиафайлов между устройствами
+  Voice_video_comm_yet_doesnt_work_on_our_server: >
+    Голосовая связь и видеосвязь (пока не работает на нашем сервере)
+  Bridges_with_other_msgrs_eg_telegram: >
+    Мосты с другими системами обмена сообщениями (например, с Telegram)
   Server_info: Информация о сервере
   Server_name_public_suffix: Имя сервера (публичный суффикс)
   Base_url_for_sign_up_and_sign_in: Базовый URL (для регистрации и входа)
