@@ -33,6 +33,12 @@
       </li>
 
       <li class="nav-item">
+        <% link_to '/team.html', class: "nav-link #{active_class('/team.html')}" do %>
+          <%= translate :Our_team %>
+        <% end %>
+      </li>
+
+      <li class="nav-item">
         <% link_to '/donate.html', class: "nav-link #{active_class('/donate.html')}" do %>
           <%= translate :donate %>
         <% end %>

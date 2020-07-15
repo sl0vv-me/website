@@ -1,0 +1,32 @@
+---
+title: ~Our_team
+---
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6 col-lg-4">
+      <div class="card mt-4">
+        <%= image_tag 'team/kotovalexarian.jpg',
+                      class: 'card-img-top',
+                      alt: translate(:Alex_Kotov) %>
+
+        <div class="card-body">
+          <h5 class="card-title">
+            <%= translate :Alex_Kotov %>
+          </h5>
+
+          <h6 class="card-subtitle mb-2 text-muted">
+            <%= translate :Founder %>
+          </h6>
+
+          <%= link_to 'Twitter',
+                      'https://twitter.com/kotovalexarian',
+                      class: 'card-link' %>
+
+          <%= link_to 'Facebook',
+                      'https://fb.com/kotovalexarian',
+                      class: 'card-link' %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
