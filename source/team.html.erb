@@ -28,5 +28,26 @@ title: ~Our_team
         </div>
       </div>
     </div>
+
+    <div class="col-sm-6 col-lg-4">
+      <div class="card mt-4">
+        <%= image_tag 'team/xuhcc.png',
+                      class: 'card-img-top',
+                      alt: translate(:Kirill_Goncharov) %>
+
+        <div class="card-body">
+          <h5 class="card-title">
+            <%= translate :Kirill_Goncharov %>
+          </h5>
+
+          <h6 class="card-subtitle mb-2 text-muted">
+            <%= translate :Sys_admin %>
+          </h6>
+
+          <%= link_to 'GitHub',
+                      'https://github.com/xuhcc',
+                      class: 'card-link' %>
+        </div>
+      </div>
   </div>
 </div>
