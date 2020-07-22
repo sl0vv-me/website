@@ -50,16 +50,33 @@
         </div>
       </li>
 
-      <li class="nav-item">
-        <% link_to '/team.html', class: "nav-link #{active_class('/team.html')}" do %>
-          <%= translate :Our_team %>
+      <li class="nav-item dropdown">
+        <% link_to '#',
+                   id: :aboutUsNavbarDropdown,
+                   role: :button,
+                   class: 'nav-link ' \
+                          'dropdown-toggle ' \
+                          "#{
+                            active_class(
+                              '/team.html',
+                              '/donate.html',
+                            )
+                          }",
+                   'data-toggle': :dropdown,
+                   'aria-haspopup': true,
+                   'aria-expanded': false do %>
+          <%= translate :About_Us %>
         <% end %>
-      </li>
 
-      <li class="nav-item">
-        <% link_to '/donate.html', class: "nav-link #{active_class('/donate.html')}" do %>
-          <%= translate :donate %>
-        <% end %>
+        <div class="dropdown-menu" aria-labelledby="aboutUsNavbarDropdown">
+          <% link_to '/team.html', class: "dropdown-item #{active_class('/team.html')}" do %>
+            <%= translate :Our_team %>
+          <% end %>
+
+          <% link_to '/donate.html', class: "dropdown-item #{active_class('/donate.html')}" do %>
+            <%= translate :donate %>
+          <% end %>
+        </div>
       </li>
     </ul>
   </div>
