@@ -10,10 +10,8 @@ ru:
   youtube_channel: Канал на YouTube
   medium_blog: Блог на Medium
   git: Система контроля версий (git)
-  donate: Сделать пожертвование
   link: Ссылка
   history: История
-  library: Библиотека
   isbn13: ISBN-13
   isbn10: ISBN-10
   authors: Авторы
@@ -26,6 +24,8 @@ ru:
   language: Язык
   downloads: Скачать
 
+  Library: Библиотека
+  Donate: Сделать пожертвование
   About_Us: О нас
   Projects: Проекты
   Kirill_Goncharov: Кирилл Гончаров
