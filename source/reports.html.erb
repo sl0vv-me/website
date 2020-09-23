@@ -26,10 +26,10 @@ title: ~Reports
     <tbody>
       <% data.reports.sort_by { |report| [report[:year], report[:month]] }.each do |report| %>
         <tr>
-          <th scope="row">
+          <td>
             <%= report[:year] %>,
             <%= translate('date.month_names')[report[:month]] %>
-          </th>
+          </td>
           <td>
             <%= report[:seller] %>
           </td>
