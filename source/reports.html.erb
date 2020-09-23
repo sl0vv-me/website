@@ -24,7 +24,7 @@ title: ~Reports
     </thead>
 
     <tbody>
-      <% data.reports.sort_by { |report| [report[:year], report[:month]] }.each do |report| %>
+      <% data.reports.sort_by { |report| [report[:year], report[:month]] }.reverse.each do |report| %>
         <tr>
           <td>
             <%= report[:year] %>,
