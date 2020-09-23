@@ -1,0 +1,40 @@
+---
+title: ~Reports
+---
+<div class="container mt-4">
+  <h1><%= translate :Reports %></h1>
+
+  <table class="table table-striped mt-3">
+    <thead>
+      <tr>
+        <th scope="col">
+          <%= translate :Year %>,
+          <%= translate :month %>
+        </th>
+        <th scope="col">
+          <%= translate :Seller %>
+        </th>
+        <th scope="col">
+          <%= translate :Download %>
+        </th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% data.reports.sort_by { |report| [report[:year], report[:month]] }.each do |report| %>
+        <tr>
+          <th scope="row">
+            <%= report[:year] %>,
+            <%= translate('date.month_names')[report[:month]] %>
+          </th>
+          <td>
+            <%= report[:seller] %>
+          </td>
+          <td>
+            <%= link_to translate(:PDF), report[:download] %>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>

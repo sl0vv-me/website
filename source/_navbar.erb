@@ -63,6 +63,7 @@
                    active_class(
                      '/team.html',
                      '/donate.html',
+                     '/reports.html',
                      '/rules.html',
                    )
                  }",
@@ -80,6 +81,10 @@
 
           <% link_to '/donate.html', class: "dropdown-item #{active_class('/donate.html')}" do %>
             <%= translate :Donate %>
+          <% end %>
+
+          <% link_to '/reports.html', class: "dropdown-item #{active_class('/reports.html')}" do %>
+            <%= translate :Reports %>
           <% end %>
 
           <% link_to '/rules.html', class: "dropdown-item #{active_class('/rules.html')}" do %>
