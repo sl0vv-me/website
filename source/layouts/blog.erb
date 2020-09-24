@@ -1,6 +1,8 @@
 <% wrap_layout :layout do %>
   <div class="container mt-4">
     <h1><%= current_page.title %></h1>
-    <%= yield %>
+    <article class="mt-5">
+      <%= yield %>
+    </article>
   </div>
 <% end %>
