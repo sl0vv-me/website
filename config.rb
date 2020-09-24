@@ -41,6 +41,7 @@ activate :autoprefixer do |prefix|
 end
 
 activate :blog do |blog|
+  blog.layout = 'blog'
   blog.prefix = 'blog'
 end
 
