@@ -5,6 +5,8 @@ $LOAD_PATH.unshift lib unless $LOAD_PATH.include? lib
 
 require 'crypto_libertarian/website'
 
+require 'middleman-blog/truncate_html'
+
 WEBPACK_SCRIPT =
   File.expand_path('node_modules/webpack/bin/webpack.js', __dir__).freeze
 
@@ -43,6 +45,20 @@ end
 activate :blog do |blog|
   blog.layout = 'blog'
   blog.prefix = 'blog'
+
+  blog.summary_generator = lambda do |blog_article, text, max_length, ellipsis|
+    max_length = 250 if max_length.nil?
+    ellipsis_length = ellipsis.length
+    text = text.encode('UTF-8') if text.respond_to?(:encode)
+    doc = Nokogiri::HTML::DocumentFragment.parse text
+    content_length = doc.inner_text.length
+    actual_length = max_length - ellipsis_length
+    if content_length > actual_length
+      doc.truncate(actual_length, ellipsis).inner_text
+    else
+      text
+    end
+  end
 end
 
 configure :build do
