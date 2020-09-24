@@ -40,6 +40,10 @@ activate :autoprefixer do |prefix|
   prefix.browsers = 'last 2 versions'
 end
 
+activate :blog do |blog|
+  blog.prefix = 'blog'
+end
+
 configure :build do
   activate :asset_host, host: config[:base_url]
 end
