@@ -128,7 +128,15 @@ image: /assets/images/blog/prisoners-dilemma.png
 в терминах теории игр, а именно через следующую матрицу выигрышей (числа могут
 отличаться, если они не нарушают общую закономерность):
 
-![Матрица выигрышей в классической дилемме заключённого.](/assets/images/blog/prisoners-dilemma.png)
+<div class="d-flex justify-content-center">
+ <figure class="cl-figure-nice">
+  <img src="/assets/images/blog/prisoners-dilemma.png"
+       alt="Матрица выигрышей в классической дилемме заключённого."/>
+  <figcaption>
+    Матрица выигрышей в классической дилемме заключённого.
+  </figcaption>
+ </figure>
+</div>
 
 Конечно, в этой игре предательство является сильно доминирующей стратегией.
 

@@ -4,7 +4,15 @@ date: 2019-05-10 11:00 UTC
 tags: либертарианство, панархизм, минархизм, естественное право
 image: /assets/images/blog/panarchy-world-new-order.jpg
 ---
-![У панархии есть не только своя символика, но и своя эстетика.](/assets/images/blog/panarchy-world-new-order.jpg)
+<div class="d-flex justify-content-center">
+ <figure class="cl-figure-nice">
+  <img src="/assets/images/blog/panarchy-world-new-order.jpg"
+       alt="У панархии есть не только своя символика, но и своя эстетика."/>
+  <figcaption>
+    У панархии есть не только своя символика, но и своя эстетика.
+  </figcaption>
+ </figure>
+</div>
 
 Идея панархии — общественного устройства, основанного на понятии
 экстерриториальных контрактных юрисдикций — становится одним из основных

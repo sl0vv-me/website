@@ -69,7 +69,11 @@ image: /assets/images/blog/condorcet.png
 на первое место более половины избирателей, может проиграть. Это возможно, если
 остальные избиратели поставили его в конец списка:
 
-![](/assets/images/blog/ranked-voting.png)
+<div class="d-flex justify-content-center">
+ <figure class="cl-figure-nice">
+  <img src="/assets/images/blog/ranked-voting.png"/>
+ </figure>
+</div>
 
 Рассмотрим также **правило Кондорсе** — если в попарном голосовании методом
 большинства какая-то альтернатива побеждает все остальные, то в результате её
@@ -83,7 +87,11 @@ image: /assets/images/blog/condorcet.png
 системе зависит от выбранного порядка, что даёт возможность манипулировать
 результатом тому, кто порядок определяет:
 
-![](/assets/images/blog/condorcet.png)
+<div class="d-flex justify-content-center">
+ <figure class="cl-figure-nice">
+  <img src="/assets/images/blog/condorcet.png"/>
+ </figure>
+</div>
 
 ---
 
