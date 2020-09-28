@@ -6,3 +6,24 @@ $fa-font-path: '../fonts/awesome';
 @import '@fortawesome/fontawesome-free/scss/brands.scss';
 @import '@fortawesome/fontawesome-free/scss/regular.scss';
 @import '@fortawesome/fontawesome-free/scss/solid.scss';
+
+figure.cl-figure-nice {
+  background-color: #fff;
+  padding: 5px;
+  font-size: .875em;
+  display: table;
+}
+
+figure.cl-figure-nice img {
+  display: block;
+  width: 100%;
+}
+
+figure.cl-figure-nice figcaption {
+  display: table-caption;
+  caption-side: bottom;
+  background: #fff;
+  padding: 0 5px 5px;
+  font-size: 90%;
+  color: #6c757d;
+}
