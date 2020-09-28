@@ -100,8 +100,7 @@ image: /assets/images/blog/prisoners-dilemma.png
   </p>
   <footer class="blockquote-footer">
     Александр Елесев (<a href="https://www.facebook.com/groups/Austrianeconomics/permalink/2746912538682238/?comment_id=2746915048681987&reply_comment_id=2746972632009562">комментарий</a>,
-    <a href="https://www.facebook.com/groups/Austrianeconomics/permalink/2746912538682238/?comment_id=2746919918681500&reply_comment_id=2747015182005307">комментарий</a>,
-    <a href="https://www.facebook.com/groups/Austrianeconomics/permalink/2746912538682238/?comment_id=2746915048681987&reply_comment_id=2746972632009562">комментарий</a>)
+    <a href="https://www.facebook.com/groups/Austrianeconomics/permalink/2746912538682238/?comment_id=2746919918681500&reply_comment_id=2747015182005307">комментарий</a>)
   </footer>
 </blockquote>
 
