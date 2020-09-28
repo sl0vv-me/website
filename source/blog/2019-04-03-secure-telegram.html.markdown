@@ -2,6 +2,7 @@
 title: Безопасное использование Telegram
 date: 2019-04-03 13:00 UTC
 tags: информационная безопасность, Telegram, Android
+image: /assets/images/blog/telegram-2fa.png
 ---
 Мессенджер Telegram является важным средством связи в Либертарианской партии
 России. Он безопаснее ближайших аналогов, таких как WhatsApp и Viber. У него

@@ -14,28 +14,40 @@ per_page: 10
 
   <% page_articles.each_with_index do |article, i| %>
     <div class="card mt-4">
-      <div class="card-body">
-        <% link_to article do %>
-          <h5 class="card-title">
-            <%= article.title %>
-          </h5>
+      <div class="row no-gutters">
+        <% if article.data[:image] %>
+          <div class="col-md-3">
+            <%= image_tag article.data[:image],
+                          alt: article.title,
+                          class: 'card-img' %>
+          </div>
         <% end %>
 
-        <p class="card-text">
-          <%= article.summary 250 %>
-        </p>
+        <div class="<%= article.data[:image] ? 'col-md-9' : 'col-md-12' %>">
+          <div class="card-body">
+            <% link_to article do %>
+              <h5 class="card-title">
+                <%= article.title %>
+              </h5>
+            <% end %>
 
-        <p class="card-text">
-          <small class="text-muted">
-            <%= I18n.localize article.date, format: :long %>
-          </small>
+            <p class="card-text">
+              <%= article.summary 250 %>
+            </p>
 
-          <% article.tags.each do |tag| %>
-            <span class="badge badge-secondary ml-2">
-              <%= tag %>
-            </span>
-          <% end %>
-        </p>
+            <p class="card-text">
+              <small class="text-muted">
+                <%= I18n.localize article.date, format: :long %>
+              </small>
+
+              <% article.tags.each do |tag| %>
+                <span class="badge badge-secondary ml-2">
+                  <%= tag %>
+                </span>
+              <% end %>
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   <% end %>

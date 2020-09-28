@@ -2,6 +2,7 @@
 title: Чёрный пиар панархии
 date: 2019-05-10 13:00 UTC
 tags: либертарианство, панархизм, минархизм, естественное право
+image: /assets/images/blog/panarchy-world-new-order.jpg
 ---
 ![У панархии есть не только своя символика, но и своя эстетика.](/assets/images/blog/panarchy-world-new-order.jpg)
 
