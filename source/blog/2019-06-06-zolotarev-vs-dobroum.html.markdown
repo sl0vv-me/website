@@ -1,6 +1,6 @@
 ---
 title: Золотарёв vs. математика, Доброум vs. здравый смысл
-date: 2019-06-06 10:00 UTC
+date: 2019-06-06 08:00 UTC
 tags: математика, экономика, этика
 image: /assets/images/blog/prisoners-dilemma.png
 ---

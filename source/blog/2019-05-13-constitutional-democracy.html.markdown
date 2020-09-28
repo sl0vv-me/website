@@ -1,6 +1,6 @@
 ---
 title: Конституционные проблемы конституционной демократии
-date: 2019-05-13 11:00 UTC
+date: 2019-05-13 09:00 UTC
 tags: демократия
 image: /assets/images/blog/condorcet.png
 ---

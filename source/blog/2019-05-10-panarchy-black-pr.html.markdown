@@ -1,6 +1,6 @@
 ---
 title: Чёрный пиар панархии
-date: 2019-05-10 13:00 UTC
+date: 2019-05-10 11:00 UTC
 tags: либертарианство, панархизм, минархизм, естественное право
 image: /assets/images/blog/panarchy-world-new-order.jpg
 ---

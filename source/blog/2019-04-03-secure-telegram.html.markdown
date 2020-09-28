@@ -1,6 +1,6 @@
 ---
 title: Безопасное использование Telegram
-date: 2019-04-03 13:00 UTC
+date: 2019-04-03 11:00 UTC
 tags: информационная безопасность, Telegram, Android
 image: /assets/images/blog/telegram-2fa.png
 ---
