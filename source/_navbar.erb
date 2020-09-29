@@ -21,7 +21,7 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <% link_to '/blog/feed.html', class: "nav-link #{active_class('/blog/feed.html')}" do %>
+        <% link_to '/blog/feed.html', class: "nav-link #{active_class(%r{\A/blog/})}" do %>
           <%= translate :Blog %>
         <% end %>
       </li>
