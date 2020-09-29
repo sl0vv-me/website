@@ -20,26 +20,10 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item dropdown">
-        <% link_to(
-          '#',
-          id: :blogNavbarDropdown,
-          role: :button,
-          class: 'nav-link ' \
-                 'dropdown-toggle ' \
-                 "#{active_class(%r{\A/blog/})}",
-          'data-toggle': :dropdown,
-          'aria-haspopup': true,
-          'aria-expanded': false,
-        ) do %>
+      <li class="nav-item">
+        <% link_to '/blog/feed.html', class: "nav-link #{active_class('/blog/feed.html')}" do %>
           <%= translate :Blog %>
         <% end %>
-
-        <div class="dropdown-menu" aria-labelledby="blogNavbarDropdown">
-          <% link_to '/blog/feed.html', class: "dropdown-item #{active_class('/blog/feed.html')}" do %>
-            <%= translate :Feed %>
-          <% end %>
-        </div>
       </li>
 
       <li class="nav-item dropdown">
