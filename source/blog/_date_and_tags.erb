@@ -1,0 +1,9 @@
+<small class="text-muted">
+  <%= I18n.localize date, format: :long %>
+</small>
+
+<% tags.each do |tag| %>
+  <span class="badge badge-secondary ml-2">
+    <%= tag %>
+  </span>
+<% end %>

@@ -3,15 +3,9 @@
     <h1><%= current_page.title %></h1>
 
     <p>
-      <small class="text-muted">
-        <%= I18n.localize current_page.date, format: :long %>
-      </small>
-
-      <% current_page.tags.each do |tag| %>
-        <span class="badge badge-secondary ml-2">
-          <%= tag %>
-        </span>
-      <% end %>
+      <%= partial 'blog/date_and_tags',
+                  locals: { date: current_page.date,
+                            tags: current_page.tags } %>
     </p>
 
     <article class="mt-5">
