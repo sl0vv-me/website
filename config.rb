@@ -51,13 +51,8 @@ activate :blog do |blog|
     ellipsis_length = ellipsis.length
     text = text.encode('UTF-8') if text.respond_to?(:encode)
     doc = Nokogiri::HTML::DocumentFragment.parse text
-    content_length = doc.inner_text.length
     actual_length = max_length - ellipsis_length
-    if content_length > actual_length
-      doc.truncate(actual_length, ellipsis).inner_text
-    else
-      text
-    end
+    doc.truncate(actual_length, ellipsis).inner_text
   end
 end
 
