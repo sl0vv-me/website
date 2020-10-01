@@ -10,6 +10,24 @@ $fa-font-path: '../fonts/awesome';
 .cl-blog-article {
   font-family: 'Linux Libertine', 'Times New Roman', Cambria, serif;
   font-size: x-large;
+
+  & blockquote {
+    position: relative;
+    padding-left: 15px;
+    font-style: italic;
+    color: #333;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 3px;
+      height: 100%;
+      background-color: #ddd;
+    }
+  }
 }
 
 figure.cl-figure-nice {
