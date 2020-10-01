@@ -22,6 +22,7 @@ figure.cl-figure-nice {
 figure.cl-figure-nice img {
   display: block;
   width: 100%;
+  max-height: 600px;
 }
 
 figure.cl-figure-nice figcaption {
