@@ -2,12 +2,12 @@
 title: Павел Дуров — не либертарианец
 date: 2020-07-12 11:44 UTC
 tags: либертарианство, безопасность, Telegram
-image: /assets/images/blog/pavel-durov-i-telegram.jpg
+image: /assets/images/blog/pavel-durov-and-telegram.jpg
 medium_link: https://link.medium.com/UulGegSIcab
 ---
 <div class="d-flex justify-content-center">
  <figure class="cl-figure-nice">
-  <img src="/assets/images/blog/pavel-durov-i-telegram.jpg"
+  <img src="/assets/images/blog/pavel-durov-and-telegram.jpg"
        alt="Павел Дуров и Telegram."/>
   <figcaption>
     Павел Дуров и Telegram.
@@ -156,7 +156,7 @@ Telegram Илья Перекопский [принял участие](https://v
 
 <div class="d-flex justify-content-center">
  <figure class="cl-figure-nice">
-  <img src="/assets/images/blog/telegram-finansirovanie.png"
+  <img src="/assets/images/blog/telegram-funding.png"
        alt="Информация о финансировании с сайта Telegram."/>
   <figcaption>
     Информация о финансировании с <a href="https://telegram.org/faq#q-how-are-you-going-to-make-money-out-of-this">сайта Telegram</a>.
