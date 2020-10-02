@@ -30,7 +30,16 @@
   </head>
 
   <body class="d-flex flex-column h-100">
-    <%= partial 'navbar' %>
-    <%= yield %>
+    <header>
+      <%= partial 'navbar' %>
+    </header>
+
+    <main>
+      <%= yield %>
+    </main>
+
+    <footer class="footer mt-auto py-3">
+      <%= partial 'advert' %>
+    </footer>
   </body>
 </html>
