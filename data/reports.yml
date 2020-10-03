@@ -45,3 +45,9 @@
   party: 'DigitalOcean LLC'
   amount: '-$24.00'
   download: '/assets/DigitalOcean Invoice 2020 Aug (4455684-418606400).pdf'
+
+- year: 2020
+  month: 9
+  party: 'DigitalOcean LLC'
+  amount: '-$24.00'
+  download: '/assets/DigitalOcean Invoice 2020 Sep (4455684-419361545).pdf'
