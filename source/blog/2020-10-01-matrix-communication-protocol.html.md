@@ -35,6 +35,35 @@ WhatsApp [известен](https://telegra.ph/Pochemu-WhatsApp-nikogda-ne-budet
 
 ---
 
+Федеративная архитектура
+------------------------
+
+<div class="d-flex justify-content-center">
+ <figure class="cl-figure-nice">
+  <img src="/assets/images/blog/matrix-federation.png"
+       alt="Схема устройства федеративной сети Matrix."/>
+  <figcaption>
+    Схема устройства федеративной сети Matrix.
+  </figcaption>
+ </figure>
+</div>
+
+Сквозное шифрование
+-------------------
+
+<div class="d-flex justify-content-center">
+ <figure class="cl-figure-nice">
+  <img src="/assets/images/blog/matrix-cross-signing.png"
+       alt="Перекрёстная подпись в клиенте Riot (теперь Element)."/>
+  <figcaption>
+    Перекрёстная подпись в клиенте Riot (теперь Element).
+  </figcaption>
+ </figure>
+</div>
+
+Клиентские приложения
+---------------------
+
 <div class="d-flex justify-content-center">
  <figure class="cl-figure-nice">
   <img src="/assets/images/blog/matrix-element.png"
