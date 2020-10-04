@@ -35,7 +35,6 @@
                  'dropdown-toggle ' \
                  "#{
                    active_class(
-                     '/matrix.html',
                      '/library.html',
                      %r{\A/library/},
                    )
@@ -48,10 +47,6 @@
         <% end %>
 
         <div class="dropdown-menu" aria-labelledby="projectsNavbarDropdown">
-          <% link_to '/matrix.html', class: "dropdown-item #{active_class('/matrix.html')}" do %>
-            <%= translate :Matrix %>
-          <% end %>
-
           <% link_to '/library.html', class: "dropdown-item #{active_class('/library.html', %r{\A/library/})}" do %>
             <%= translate :Library %>
           <% end %>
