@@ -3,8 +3,6 @@
 lib = File.expand_path('lib', __dir__).freeze
 $LOAD_PATH.unshift lib unless $LOAD_PATH.include? lib
 
-require 'crypto_libertarian/website'
-
 require 'middleman-blog/truncate_html'
 
 WEBPACK_SCRIPT =
@@ -66,13 +64,6 @@ activate :external_pipeline,
          source: File.expand_path('tmp/webpack', __dir__),
          latency: 1
 
-data.library.each do |library_item|
-  proxy "/library/#{library_item.id}.html",
-        '/library/template.html',
-        ignore: true,
-        locals: { library_item: library_item }
-end
-
 helpers do
   def translate(*args)
     I18n.translate(*args)
@@ -127,18 +118,5 @@ helpers do
     else
       raise TypeError
     end
-  end
-
-  def library
-    @library ||= data.library.map do |library_item_options|
-      CryptoLibertarian::Website::LibraryItem.new library_item_options
-    end.sort_by(&:title).freeze
-  end
-
-  def library_item_image(library_item)
-    id  = library_item.id.presence      or raise
-    ext = library_item.img_ext.presence or raise
-
-    "library/#{id}.#{ext}"
   end
 end

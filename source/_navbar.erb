@@ -29,33 +29,6 @@
       <li class="nav-item dropdown">
         <% link_to(
           '#',
-          id: :projectsNavbarDropdown,
-          role: :button,
-          class: 'nav-link ' \
-                 'dropdown-toggle ' \
-                 "#{
-                   active_class(
-                     '/library.html',
-                     %r{\A/library/},
-                   )
-                 }",
-          'data-toggle': :dropdown,
-          'aria-haspopup': true,
-          'aria-expanded': false,
-        ) do %>
-          <%= translate :Projects %>
-        <% end %>
-
-        <div class="dropdown-menu" aria-labelledby="projectsNavbarDropdown">
-          <% link_to '/library.html', class: "dropdown-item #{active_class('/library.html', %r{\A/library/})}" do %>
-            <%= translate :Library %>
-          <% end %>
-        </div>
-      </li>
-
-      <li class="nav-item dropdown">
-        <% link_to(
-          '#',
           id: :aboutUsNavbarDropdown,
           role: :button,
           class: 'nav-link ' \
