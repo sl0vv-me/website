@@ -38,7 +38,6 @@
                      '/team.html',
                      '/donate.html',
                      '/rules.html',
-                     '/reports.html',
                    )
                  }",
           'data-toggle': :dropdown,
@@ -59,10 +58,6 @@
 
           <% link_to '/rules.html', class: "dropdown-item #{active_class('/rules.html')}" do %>
             <%= translate :Rules %>
-          <% end %>
-
-          <% link_to '/reports.html', class: "dropdown-item #{active_class('/reports.html')}" do %>
-            <%= translate :Reports %>
           <% end %>
         </div>
       </li>
