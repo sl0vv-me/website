@@ -19,7 +19,6 @@ set(
   telegram_chat: 'https://t.me/crypto_libertarian_chat',
   youtube_channel: 'https://www.youtube.com/channel/UCj9VPPL4riHinL3N9RbmLww',
   medium_blog: 'https://medium.com/crypto-libertarian',
-  git: 'https://git.crypto-libertarian.com',
 )
 
 set :css_dir,    'assets/stylesheets'
