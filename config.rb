@@ -95,7 +95,11 @@ helpers do
 
   def description
     if current_page.data.description.blank?
-      translate :description
+      if current_page.respond_to? :summary
+        current_page.summary 250
+      else
+        translate :description
+      end
     else
       if current_page.data.description =~ /\A~(\w+)\z/
         translate $1
