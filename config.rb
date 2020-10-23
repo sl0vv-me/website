@@ -105,6 +105,14 @@ helpers do
     end
   end
 
+  def thumbnail
+    if current_page.data.image.blank?
+      image_path 'logo.jpg'
+    else
+      current_page.data.image
+    end
+  end
+
   def active_class(*urls)
     return ' active ' if urls.any? { |url| active_class? url }
   end
