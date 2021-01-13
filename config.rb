@@ -5,6 +5,18 @@ $LOAD_PATH.unshift lib unless $LOAD_PATH.include? lib
 
 require 'middleman-blog/truncate_html'
 
+module ::URI
+  ##
+  # Bug in Ruby 3.0.0
+  #
+  # undefined method `escape' for URI:Module
+  # ~/.rvm/gems/ruby-3.0.0@crypto_libertarian-website/gems/middleman-core-4.3.11/lib/middleman-core/builder.rb:232:in `block in output_resource'
+  #
+  def self.escape(*args)
+    DEFAULT_PARSER.escape(*args)
+  end
+end
+
 WEBPACK_SCRIPT =
   File.expand_path('node_modules/webpack/bin/webpack.js', __dir__).freeze
 
