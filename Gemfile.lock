@@ -1,7 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (5.2.4.4)
+    activesupport (5.2.4.5)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 0.7, < 2)
       minitest (~> 5.1)
@@ -10,19 +10,19 @@ GEM
       public_suffix (>= 2.0.2, < 5.0)
     autoprefixer-rails (9.8.6.5)
       execjs
-    backports (3.20.1)
+    backports (3.20.2)
     coffee-script (2.4.1)
       coffee-script-source
       execjs
     coffee-script-source (1.12.2)
-    concurrent-ruby (1.1.7)
+    concurrent-ruby (1.1.8)
     contracts (0.13.0)
     dotenv (2.7.6)
     erubis (2.7.0)
     execjs (2.7.0)
     fast_blank (1.0.0)
-    fastimage (2.2.1)
-    ffi (1.14.2)
+    fastimage (2.2.3)
+    ffi (1.15.0)
     haml (5.2.1)
       temple (>= 0.8.0)
       tilt
@@ -76,7 +76,7 @@ GEM
       tilt (~> 2.0.9)
       uglifier (~> 3.0)
     mini_portile2 (2.5.0)
-    minitest (5.14.3)
+    minitest (5.14.4)
     nokogiri (1.11.1)
       mini_portile2 (~> 2.5.0)
       racc (~> 1.4)
@@ -98,7 +98,7 @@ GEM
       ffi (~> 1.9)
     servolux (0.13.0)
     temple (0.8.2)
-    thor (1.0.1)
+    thor (1.1.0)
     thread_safe (0.3.6)
     tilt (2.0.10)
     tzinfo (1.2.9)
