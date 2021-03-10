@@ -40,6 +40,9 @@ set :js_dir,     'assets/javascripts'
 
 set :sass_assets_paths, %w[node_modules]
 
+set :markdown_engine, :redcarpet
+set :markdown, fenced_code_blocks: true, smartypants: true
+
 page '/*.xml',  layout: false
 page '/*.json', layout: false
 page '/*.txt',  layout: false
