@@ -9,7 +9,6 @@ ru:
   telegram_chat: Чат в Telegram
   youtube_channel: Канал на YouTube
   medium_blog: Блог на Medium
-  git: Система контроля версий (git)
   link: Ссылка
   history: История
   isbn13: ISBN-13
@@ -24,11 +23,13 @@ ru:
   downloads: Скачать
 
   Blog: Блог
-  Rules: Правила
   Donate: Сделать пожертвование
   About_Us: О нас
-  Kirill_Goncharov: Кирилл Гончаров
   Sys_admin: Системный администратор
   Founder: Основатель
   Alex_Kotov: Александр Котов
   Our_team: Наша команда
+  Pagination: Нумерация страниц
+  Previous_page: Предыдущая страница
+  Next_page: Следующая страница
+  Page_N: Страница %{number}

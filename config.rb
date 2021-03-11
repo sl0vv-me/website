@@ -5,11 +5,23 @@ $LOAD_PATH.unshift lib unless $LOAD_PATH.include? lib
 
 require 'middleman-blog/truncate_html'
 
+module ::URI
+  ##
+  # Bug in Ruby 3.0.0
+  #
+  # undefined method `escape' for URI:Module
+  # ~/.rvm/gems/ruby-3.0.0@crypto_libertarian-website/gems/middleman-core-4.3.11/lib/middleman-core/builder.rb:232:in `block in output_resource'
+  #
+  def self.escape(*args)
+    DEFAULT_PARSER.escape(*args)
+  end
+end
+
 WEBPACK_SCRIPT =
   File.expand_path('node_modules/webpack/bin/webpack.js', __dir__).freeze
 
-WEBPACK_BUILD = "#{WEBPACK_SCRIPT} --bail -p"
-WEBPACK_RUN   = "#{WEBPACK_SCRIPT} --watch -d --progress --color"
+WEBPACK_BUILD = "#{WEBPACK_SCRIPT} --progress --color --bail"
+WEBPACK_RUN   = "#{WEBPACK_SCRIPT} --progress --color --watch"
 
 set :base_url, 'https://crypto-libertarian.com'
 
@@ -19,7 +31,6 @@ set(
   telegram_chat: 'https://t.me/crypto_libertarian_chat',
   youtube_channel: 'https://www.youtube.com/channel/UCj9VPPL4riHinL3N9RbmLww',
   medium_blog: 'https://medium.com/crypto-libertarian',
-  git: 'https://git.crypto-libertarian.com',
 )
 
 set :css_dir,    'assets/stylesheets'
@@ -28,6 +39,9 @@ set :images_dir, 'assets/images'
 set :js_dir,     'assets/javascripts'
 
 set :sass_assets_paths, %w[node_modules]
+
+set :markdown_engine, :redcarpet
+set :markdown, fenced_code_blocks: true, smartypants: true
 
 page '/*.xml',  layout: false
 page '/*.json', layout: false
@@ -43,6 +57,7 @@ end
 activate :blog do |blog|
   blog.layout = 'blog_article'
   blog.prefix = '/blog'
+  blog.paginate = true
 
   blog.summary_generator = lambda do |blog_article, text, max_length, ellipsis|
     max_length = 250 if max_length.nil?
@@ -129,6 +144,33 @@ helpers do
       current_page.url.match? url
     else
       raise TypeError
+    end
+  end
+
+  def disabled_class_if(cond)
+    ' disabled' if cond
+  end
+
+  def disabled_class_unless(cond)
+    disabled_class_if !cond
+  end
+
+  def neg_tabindex_if(cond)
+    '-1' if cond
+  end
+
+  def neg_tabindex_unless(cond)
+    neg_tabindex_if !cond
+  end
+
+  def blog_feed_page_path(page_number)
+    page_number = Integer page_number
+    raise "Invalid page number: #{page_number}" unless page_number.positive?
+
+    if page_number == 1
+      '/blog/feed.html'
+    else
+      "/blog/feed/page/#{page_number}.html"
     end
   end
 end

@@ -2,6 +2,8 @@ var webpack = require('webpack')
 var path    = require('path')
 
 module.exports = {
+  mode: 'production',
+
   entry: {
     site: path.resolve(__dirname, 'source/assets/javascripts/site.js'),
   },

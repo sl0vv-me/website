@@ -7,6 +7,11 @@ $fa-font-path: '../fonts/awesome';
 @import '@fortawesome/fontawesome-free/scss/regular.scss';
 @import '@fortawesome/fontawesome-free/scss/solid.scss';
 
+// TODO: Configure Markdown parser to emit CSS class attribute.
+pre {
+  background-color: #eee;
+}
+
 .cl-blog-article {
   font-family: 'Linux Libertine', 'Times New Roman', Cambria, serif;
   font-size: x-large;
