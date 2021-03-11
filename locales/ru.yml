@@ -29,3 +29,7 @@ ru:
   Founder: Основатель
   Alex_Kotov: Александр Котов
   Our_team: Наша команда
+  Pagination: Нумерация страниц
+  Previous_page: Предыдущая страница
+  Next_page: Следующая страница
+  Page_N: Страница %{number}
