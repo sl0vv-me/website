@@ -57,6 +57,7 @@ end
 activate :blog do |blog|
   blog.layout = 'blog_article'
   blog.prefix = '/blog'
+  blog.paginate = true
 
   blog.summary_generator = lambda do |blog_article, text, max_length, ellipsis|
     max_length = 250 if max_length.nil?
@@ -131,6 +132,33 @@ helpers do
       current_page.url.match? url
     else
       raise TypeError
+    end
+  end
+
+  def disabled_class_if(cond)
+    ' disabled' if cond
+  end
+
+  def disabled_class_unless(cond)
+    disabled_class_if !cond
+  end
+
+  def neg_tabindex_if(cond)
+    '-1' if cond
+  end
+
+  def neg_tabindex_unless(cond)
+    neg_tabindex_if !cond
+  end
+
+  def blog_feed_page_path(page_number)
+    page_number = Integer page_number
+    raise "Invalid page number: #{page_number}" unless page_number.positive?
+
+    if page_number == 1
+      '/blog/feed.html'
+    else
+      "/blog/feed/page/#{page_number}.html"
     end
   end
 end

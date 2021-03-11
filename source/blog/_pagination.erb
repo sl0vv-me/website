@@ -1,0 +1,36 @@
+<% if paginate && num_pages > 1 %>
+  <nav aria-label="Pagination">
+    <ul class="pagination" style="justify-content: center">
+      <li class="page-item<%= disabled_class_unless prev_page %>">
+        <% link_to prev_page,
+                   class: 'page-link',
+                   tabindex: neg_tabindex_unless(prev_page),
+                   'aria-label': 'Previous page',
+                   'aria-disabled': !!prev_page do %>
+          <span aria-hidden="true">&laquo;</span>
+        <% end %>
+      </li>
+
+      <% 1.upto(num_pages).each do |page_index| %>
+        <li class="page-item<%= disabled_class_if page_index == page_number %>">
+          <%= link_to page_index,
+                      blog_feed_page_path(page_index),
+                      class: 'page-link',
+                      tabindex: neg_tabindex_if(page_index == page_number),
+                      'aria-label': "Page #{page_index}",
+                      'aria-disabled': page_index == page_number %>
+        </li>
+      <% end %>
+
+      <li class="page-item<%= disabled_class_unless next_page %>">
+        <% link_to next_page,
+                   class: 'page-link',
+                   tabindex: neg_tabindex_unless(next_page),
+                   'aria-label': 'Next page',
+                   'aria-disabled': !!next_page do %>
+          <span aria-hidden="true">&raquo;</span>
+        <% end %>
+      </li>
+    </ul>
+  </nav>
+<% end %>

@@ -3,22 +3,18 @@ title: ~Blog
 pageable: true
 per_page: 10
 ---
-<div class="container">
-  <% if paginate && num_pages > 1 %>
-    <p>Page <%= page_number %> of <%= num_pages %></p>
-
-    <% if prev_page %>
-      <p><%= link_to 'Previous page', prev_page %></p>
-    <% end %>
-  <% end %>
+<div class="container my-4">
+  <div class="mb-4">
+    <%= partial 'pagination' %>
+  </div>
 
   <% page_articles.each do |article| %>
-    <%= partial 'article_card', locals: { article: article } %>
+    <div class="mt-4">
+      <%= partial 'article_card', locals: { article: article } %>
+    </div>
   <% end %>
 
-  <% if paginate %>
-    <% if next_page %>
-      <p><%= link_to 'Next page', next_page %></p>
-    <% end %>
-  <% end %>
+  <div class="mt-4">
+    <%= partial 'pagination' %>
+  </div>
 </div>
