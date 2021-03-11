@@ -20,8 +20,8 @@ end
 WEBPACK_SCRIPT =
   File.expand_path('node_modules/webpack/bin/webpack.js', __dir__).freeze
 
-WEBPACK_BUILD = "#{WEBPACK_SCRIPT} --bail -p"
-WEBPACK_RUN   = "#{WEBPACK_SCRIPT} --watch -d --progress --color"
+WEBPACK_BUILD = "#{WEBPACK_SCRIPT} --progress --color --bail"
+WEBPACK_RUN   = "#{WEBPACK_SCRIPT} --progress --color --watch"
 
 set :base_url, 'https://crypto-libertarian.com'
 
