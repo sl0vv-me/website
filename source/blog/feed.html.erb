@@ -13,37 +13,7 @@ per_page: 10
   <% end %>
 
   <% page_articles.each do |article| %>
-    <div class="card mt-4">
-      <div class="row no-gutters">
-        <% if article.data[:image] %>
-          <div class="col-md-3">
-            <%= image_tag article.data[:image],
-                          alt: article.title,
-                          class: 'card-img' %>
-          </div>
-        <% end %>
-
-        <div class="<%= article.data[:image] ? 'col-md-9' : 'col-md-12' %>">
-          <div class="card-body">
-            <% link_to article do %>
-              <h5 class="card-title">
-                <%= article.title %>
-              </h5>
-            <% end %>
-
-            <p class="card-text">
-              <%= article.summary 250 %>
-            </p>
-
-            <p class="card-text">
-              <%= partial 'date_and_tags',
-                          locals: { date: article.date,
-                                    tags: article.tags } %>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
+    <%= partial 'article_card', locals: { article: article } %>
   <% end %>
 
   <% if paginate %>
